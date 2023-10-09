@@ -1,7 +1,10 @@
 name: timezone_dropdown
-description: A dropdown widget contains all available timezones
-version: 1.0.1
+description: A dropdown widget contains all available timezones, by default the current device/browser timezone is identified and selected
+version: 1.0.3
 homepage: https://boodskap.io
+repository: https://github.com/boodskap/timezone_dropdown
+documentation: "https://pub.dev/packages/timezone_dropdown#simple-implementation"
+publish_to:
 
 environment:
   sdk: '>=3.1.2 <4.0.0'
