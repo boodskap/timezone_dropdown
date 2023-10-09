@@ -7,11 +7,9 @@ import 'package:flutter_native_timezone/flutter_native_timezone.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest.dart' as tz;
 
-
 typedef void TimezoneSelectedFunction(String timeZone);
 
 class TimezoneDropdown extends StatefulWidget {
-
   final String hintText;
   final TimezoneSelectedFunction onTimezoneSelected;
 
@@ -23,10 +21,8 @@ class TimezoneDropdown extends StatefulWidget {
 }
 
 class TimezoneDropdownState extends State<TimezoneDropdown> {
-
   final List<String> timezones = [];
   String? myTz = "";
-
 
   @override
   void initState() {
@@ -46,9 +42,7 @@ class TimezoneDropdownState extends State<TimezoneDropdown> {
 
     widget.onTimezoneSelected(myTz!);
 
-    setState(() {
-
-    });
+    setState(() {});
   }
 
   @override
@@ -68,7 +62,6 @@ class TimezoneDropdownState extends State<TimezoneDropdown> {
         });
       },
       selectedItem: myTz!,
-
       items: timezones,
     );
   }
