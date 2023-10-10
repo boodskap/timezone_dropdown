@@ -1,13 +1,13 @@
 name: timezone_dropdown
 description: A dropdown widget contains all available timezones, by default the current device/browser timezone is identified and selected
-version: 1.0.3
+version: 1.0.4
 homepage: https://boodskap.io
 repository: https://github.com/boodskap/timezone_dropdown
 documentation: "https://pub.dev/packages/timezone_dropdown#simple-implementation"
 publish_to:
 
 environment:
-  sdk: '>=3.1.2 <4.0.0'
+  sdk: '>=2.17.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
