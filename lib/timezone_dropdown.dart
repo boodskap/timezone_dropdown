@@ -2,7 +2,6 @@ library timezone_dropdown;
 
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_timezone/flutter_native_timezone.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest.dart' as tz;
 
@@ -37,7 +36,11 @@ class TimezoneDropdownState extends State<TimezoneDropdown> {
   }
 
   void loadTimeZones() async {
-    myTz = await FlutterNativeTimezone.getLocalTimezone();
+    myTz = DateTime.now().timeZoneName;
+
+    if (!timezones.contains(myTz)) {
+      timezones.add(myTz!);
+    }
 
     widget.onTimezoneSelected(myTz!);
 
