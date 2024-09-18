@@ -1,6 +1,10 @@
+## 1.0.5
+
+* Removed flutter native timezone dependency
+
 ## 1.0.4
 
-* Made it compatible with olver versions of sdk >=2.17.0
+* Made it compatible with older versions of sdk >=2.17.0
 
 ## 1.0.3
 
